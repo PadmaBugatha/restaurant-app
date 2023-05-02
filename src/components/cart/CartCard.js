@@ -36,14 +36,14 @@ const CartCard = () => {
   // return <MealsCart cartItems={cartItems} />;
   return (
     <div className="flex justify-center">
-      <div className="bg-green-300 fixed z-30 p-2 rounded w-7/12  ">
+      <div className="bg-green-100  mt-4 fixed z-30 p-2 rounded w-7/12  ">
         {cartItems}
         <div className="flex justify-between items-center font-bold text-2xl my-4">
           <span>Total Amount</span>
           <span>{totalAmount}</span>
         </div>
         <div className="text-right">
-          <button className="text-orange-800">Close</button>
+          <button className="text-yellow-700">Close</button>
           {hasItems && (
             <button className="bg-orange-500 text-white">Order</button>
           )}

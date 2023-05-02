@@ -33,14 +33,14 @@ const MainNavigation = () => {
             </li>
             <li className="text-gray-600 font-medium">
               <NavLink
-                to="/meals"
+                to="/specials"
                 className={({ isActive }) =>
                   isActive
                     ? "bg-emerald-900 p-1 text-white rounded-md"
                     : undefined
                 }
               >
-                Menu
+                Specials
               </NavLink>
             </li>
             <li className="text-gray-600 font-medium">
@@ -82,7 +82,7 @@ const MainNavigation = () => {
                     : undefined
                 }
               >
-                Login
+                Menu
               </NavLink>
             </li>
           </ul>

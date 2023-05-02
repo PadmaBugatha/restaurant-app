@@ -5,7 +5,7 @@ const Hero = () => {
   const navigate = useNavigate();
 
   function navigateHandler() {
-    navigate("/meals");
+    navigate("/specials");
   }
   const navigateReservationsHandler = () => {
     navigate("/reservations");

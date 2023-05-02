@@ -1,5 +1,6 @@
 import React from "react";
 import MealCard from "../components/meals/MealCard";
+import { useNavigate } from "react-router-dom";
 
 const DUMMY_MEALS = [
   {
@@ -28,13 +29,21 @@ const DUMMY_MEALS = [
   },
 ];
 const MealsPage = () => {
+  const navigate = useNavigate();
+
+  const navigateMenuHandler = () => {
+    navigate("/login");
+  };
   return (
     <>
       <div className="flex flex-row justify-between px-14 pt-8 ">
         <h1 className="text-3xl font-bold text-center">
           FAVOURITES THIS WEEK!
         </h1>
-        <button className="bg-gradient-to-r from-yellow-500 to-yellow-400 hover:from-pink-500 hover:to-yellow-500 px-4 py-2 rounded-lg hover:text-white ">
+        <button
+          onClick={navigateMenuHandler}
+          className="bg-gradient-to-r from-yellow-500 to-yellow-400 hover:from-pink-500 hover:to-yellow-500 px-4 py-2 rounded-lg hover:text-white "
+        >
           Online Menu
         </button>
       </div>

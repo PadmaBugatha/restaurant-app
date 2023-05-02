@@ -26,9 +26,9 @@ const MealItemForm = (props) => {
     <form className="flex justify-between text-right" onSubmit={submitHandler}>
       <Input
         ref={amountInputRef}
-        label="Amount"
+        label="Quantity"
         input={{
-          id: "amount_" + props.id,
+          id: "quantity_" + props.id,
           type: "number",
           min: "1",
           max: "5",
